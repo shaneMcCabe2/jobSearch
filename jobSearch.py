@@ -8,7 +8,9 @@
 from selenium import webdriver # web scraping functions
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By # locate elements on web pages
-# import time # time-related functions
+from selenium.webdriver.support.ui import WebDriverWait
+
+import time # time-related processes
 import pandas as pd # data manipulation and cleaning
 import re # RegEx for text pattern matching
 
@@ -16,7 +18,11 @@ import re # RegEx for text pattern matching
 # loads the page and returns the webdriver
 def load_page():
     # linkedin job search page
-    url = 'https://www.linkedin.com/jobs/search?keywords=Data%20Analyst&location=United%20States&locationId=&geoId=103644278&f_TPR=r86400&position=1&pageNum=0'
+
+
+    ####### url = 'https://www.linkedin.com/jobs/search?keywords=Data%20Analyst&location=United%20States&locationId=&geoId=103644278&f_TPR=r86400&position=1&pageNum=0'
+    url = 'https://www.linkedin.com/jobs/search?keywords=Data%20Analyst&location=United%20States&locationId=&geoId=103644278&f_TPR=r86400&f_PP=102571732&position=1&pageNum=0'
+
 
     ## installed geckodriver - a proxy for using W3C WebDriver clients with Gecko-based browsers
     ## https://github.com/mozilla/geckodriver - added to user path
@@ -43,9 +49,28 @@ def get_job_count(webdriver):
     return job_count
 
 
+# Linkedin loads more jobs as you scroll the page, this function scrolls for us
+def scroll_jobs(job_count, webdriver):
+    i = 2
+    while i <= int(job_count / 25) + 1:
+        webdriver.execute_script('window.scrollTo(0,document.body.scrollHeight);')
+        i = i + 1
+        try:
+            WebDriverWait(webdriver, timeout=1).until(find_element(By.XPATH, '//html/body/div[1]/div/main/section[2]/button').click())
+            time.sleep(.1)
+        except:
+            pass
+            time.sleep(.1)
+
+    job_list = webdriver.find_element(By.CLASS_NAME, 'jobs-search__results-list')
+    jobs = job_list.find_elements(By.TAG_NAME, 'li') # return list
+    print(len(jobs))
+
+
 def main():
     webdriver = load_page()
-    get_job_count(webdriver)
+    job_count = get_job_count(webdriver)
+    scroll_jobs(job_count, webdriver)
 
 
 if __name__=='__main__':
