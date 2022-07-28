@@ -7,8 +7,9 @@
 
 from selenium import webdriver # web scraping functions
 from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.common.by import By # locate elements on web pages
+from selenium.webdriver.common.by import By # locate elements on webpages
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.select import Select
 
 import time # time-related processes
 import pandas as pd # data manipulation and cleaning
@@ -30,11 +31,13 @@ def load_page():
     # define driver capabilities using FirefoxOptions
     # source: https://www.selenium.dev/documentation/webdriver/capabilities/firefox/
     options = Options()
-    options.headless = True
+    # options.headless = True
     wd = webdriver.Firefox(options=options)
-
+    wd.maximize_window()
     # load url
     wd.get(url)
+    # script crashes if webpage doesn't load on time, sleep to ensure it loads
+    time.sleep(3)
     print('Page loaded Successfully!')
     return wd
 
@@ -49,14 +52,19 @@ def get_job_count(webdriver):
     return job_count
 
 
+
+## https://www.selenium.dev/documentation/webdriver/waits/   ?????
 # Linkedin loads more jobs as you scroll the page, this function scrolls for us
 def scroll_jobs(job_count, webdriver):
-    i = 2
-    while i <= int(job_count / 25) + 1:
-        webdriver.execute_script('window.scrollTo(0,document.body.scrollHeight);')
+    i = 0
+    ## added 10 extra loops, sometimes a click or scroll down page would be skipped
+    ## this ensures all jobs are loaded (unless there are 10+ skips)
+    while i <= 5: # int(job_count / 25) + 10:
+        webdriver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
+        time.sleep(1)
         i = i + 1
         try:
-            WebDriverWait(webdriver, timeout=1).until(find_element(By.XPATH, '//html/body/div[1]/div/main/section[2]/button').click())
+            webdriver.find_element(By.CLASS_NAME, 'infinite-scroller__show-more-button.infinite-scroller__show-more-button--visible').click()
             time.sleep(.1)
         except:
             pass
@@ -65,12 +73,55 @@ def scroll_jobs(job_count, webdriver):
     job_list = webdriver.find_element(By.CLASS_NAME, 'jobs-search__results-list')
     jobs = job_list.find_elements(By.TAG_NAME, 'li') # return list
     print(len(jobs))
+    return jobs
 
+
+def jobs_to_dataframe(jobs):
+
+    # initialize columns as arrays
+    job_id=[]
+    job_title=[]
+    company_name=[]
+    location=[]
+    date=[]
+    job_link=[]
+
+    for job in jobs:
+        #job_id0 = job.find_element(By.CSS_SELECTOR, 'data-id')
+        #job_id.append(job_id0)
+
+        job_title0 = job.find_element(By.CSS_SELECTOR, 'h3.base-search-card__title').get_attribute('innerText')
+        job_title.append(job_title0)
+
+        company_name0 = job.find_element(By.CSS_SELECTOR,'h4.base-search-card__subtitle').get_attribute('innerText')
+        company_name.append(company_name0)
+
+        location0 = job.find_element(By.CSS_SELECTOR, 'div>div>span.job-search-card__location').get_attribute('innerText')
+        location.append(location0)
+
+        date0 = job.find_element(By.CSS_SELECTOR, 'div>div>time.job-search-card__listdate--new').get_attribute('datetime')
+        date.append(date0)
+
+        job_link0 = job.find_element(By.CSS_SELECTOR,'h4>a.hidden-nested-link').get_attribute('href')
+        job_link.append(job_link0)
+
+    # create DataFrame and load data
+    job_data = pd.DataFrame({#'ID': job_id,
+    'Title': job_title,
+    'Company': company_name,
+    'Location': location,
+    'Date': date,
+    'Link': job_link
+    })
+
+    # pd.set_option('display.max_columns', None)
+    # print(job_data.head())
 
 def main():
     webdriver = load_page()
     job_count = get_job_count(webdriver)
-    scroll_jobs(job_count, webdriver)
+    jobs = scroll_jobs(job_count, webdriver)
+    jobs_to_dataframe(jobs)
 
 
 if __name__=='__main__':
