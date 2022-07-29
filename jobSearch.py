@@ -59,7 +59,7 @@ def scroll_jobs(job_count, webdriver):
     i = 0
     ## added 10 extra loops, sometimes a click or scroll down page would be skipped
     ## this ensures all jobs are loaded (unless there are 10+ skips)
-    while i <= 5: # int(job_count / 25) + 10:
+    while i<= 0: i <= int(job_count / 25) + 10:
         webdriver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
         time.sleep(1)
         i = i + 1
@@ -79,6 +79,7 @@ def scroll_jobs(job_count, webdriver):
 def jobs_to_dataframe(jobs):
 
     # initialize columns as arrays
+    # data from cards
     job_id=[]
     job_title=[]
     company_name=[]
@@ -86,36 +87,99 @@ def jobs_to_dataframe(jobs):
     date=[]
     job_link=[]
 
+    # data from card details
+    job_description = []
+    seniority = []
+    emp_type = []
+    job_function = []
+    industries = []
+    applicants = []
+
+    # get the data from each card
     for job in jobs:
         #job_id0 = job.find_element(By.CSS_SELECTOR, 'data-id')
         #job_id.append(job_id0)
 
-        job_title0 = job.find_element(By.CSS_SELECTOR, 'h3.base-search-card__title').get_attribute('innerText')
+        job_title0 = job.find_element(By.CSS_SELECTOR, 'div>h3.base-search-card__title').get_attribute('innerText')
         job_title.append(job_title0)
 
-        company_name0 = job.find_element(By.CSS_SELECTOR,'h4.base-search-card__subtitle').get_attribute('innerText')
+        company_name0 = job.find_element(By.CSS_SELECTOR,'div>h4.base-search-card__subtitle').get_attribute('innerText')
         company_name.append(company_name0)
 
         location0 = job.find_element(By.CSS_SELECTOR, 'div>div>span.job-search-card__location').get_attribute('innerText')
         location.append(location0)
 
-        date0 = job.find_element(By.CSS_SELECTOR, 'div>div>time.job-search-card__listdate--new').get_attribute('datetime')
+        #date0 = job.find_element(By.CSS_SELECTOR, 'time.job-search-card__listdate--new').get_attribute('datetime')
+        date0 = job.find_element(By.XPATH, '//div/div[2]/div/time').get_attribute('datetime')
         date.append(date0)
 
-        job_link0 = job.find_element(By.CSS_SELECTOR,'h4>a.hidden-nested-link').get_attribute('href')
+        # /html/body/div[1]/div/main/section[2]/ul/li[5]/div/a
+        job_link0 = job.find_element(By.XPATH,'//div/a').get_attribute('href')
         job_link.append(job_link0)
 
+    # click into each card to get more detailed data
+    for item in range(len(jobs)):
+        # arrays to be appended below
+        job_function0 = []
+        industries0 = []
+
+        # click into each card
+        job_click_path = f"//div[@class='base-serp-page']//li[{item+1}]//a[@class='base-card__full-link absolute top-0 right-0 bottom-0 left-0 p-0 z-[2]']"
+        # job_click_path = f'/html/body/main/div/section[2]/ul/li[{item+1}]/img'
+        job_click = job.find_element(By.XPATH, job_click_path).click()
+        time.sleep(.1)
+
+        job_description_path = "//div[@class='description__text description__text--rich']"
+        job_description0 = job.find_element(By.XPATH, job_description_path).get_attribute('innerText')
+        job_description.append(job_description0)
+
+        seniority_path = "//li[1]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
+        seniority0 = job.find_element(By.XPATH, seniority_path).get_attribute('innerText')
+        seniority.append(seniority0)
+
+        emp_type_path = "//li[2]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
+        emp_type0 = job.find_element(By.XPATH, emp_type_path).get_attribute('innerText')
+        emp_type.append(emp_type0)
+
+        job_function_path = "//li[3]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
+        job_function_elements = job.find_elements(By.XPATH, job_function_path)
+        for element in job_function_elements:
+            job_function0.append(element.get_attribute('innerText'))
+            job_function1 = ', '.join(job_function0)
+        job_function.append(job_function1)
+
+        industries_path = "//li[4]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
+        industries_elements = job.find_elements(By.XPATH, industries_path)
+        for element in industries_elements:
+            industries0.append(element.get_attribute('innerText'))
+            industries1 = ', '.join(industries0)
+        industries.append(industries1)
+
+        # #/html/body/div[1]/div/section/div[2]/section/div/div[1]/div/h4/div[2]/figure/figcaption  //div[@class='base-serp-page']//section[@class='two-pane-serp-page__detail-view']
+        # applicants_path = "//figure[@class='num-applicants__figure topcard__flavor--metadata topcard__flavor--bullet']/figcaption" # [@class='num-applicants__caption']"
+        # applicants0 = job.find_element(By.XPATH, applicants_path).get_attribute('innerText')
+        # applicants.append(applicants0)
+
+
     # create DataFrame and load data
-    job_data = pd.DataFrame({#'ID': job_id,
+    job_data = pd.DataFrame({
     'Title': job_title,
     'Company': company_name,
     'Location': location,
     'Date': date,
-    'Link': job_link
+    'Link': job_link,
+    'Description': job_description,
+    'Seniority': seniority,
+    'Employment_Type': emp_type,
+    'Function': job_function,
+    'Industry': industries
+    #'Applicants': applicants
     })
 
-    # pd.set_option('display.max_columns', None)
-    # print(job_data.head())
+
+    pd.set_option('display.max_columns', None)
+    print(job_data.head())
+    #print(job_data['Link'].to_string(index=False))
 
 def main():
     webdriver = load_page()
