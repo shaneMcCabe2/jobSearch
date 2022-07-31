@@ -10,7 +10,6 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By # locate elements on webpages
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.select import Select
-
 import time # time-related processes
 import pandas as pd # data manipulation and cleaning
 import re # RegEx for text pattern matching
@@ -59,7 +58,7 @@ def scroll_jobs(job_count, webdriver):
     i = 0
     ## added 10 extra loops, sometimes a click or scroll down page would be skipped
     ## this ensures all jobs are loaded (unless there are 10+ skips)
-    while i<= 0: i <= int(job_count / 25) + 10:
+    while i<= 0: # i <= int(job_count / 25) + 10:
         webdriver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
         time.sleep(1)
         i = i + 1
@@ -125,39 +124,59 @@ def jobs_to_dataframe(jobs):
 
         # click into each card
         job_click_path = f"//div[@class='base-serp-page']//li[{item+1}]//a[@class='base-card__full-link absolute top-0 right-0 bottom-0 left-0 p-0 z-[2]']"
-        # job_click_path = f'/html/body/main/div/section[2]/ul/li[{item+1}]/img'
         job_click = job.find_element(By.XPATH, job_click_path).click()
         time.sleep(.1)
 
-        job_description_path = "//div[@class='description__text description__text--rich']"
-        job_description0 = job.find_element(By.XPATH, job_description_path).get_attribute('innerText')
+
+        # added try and except blocks to account for job postings with incomplete data (ie: shows employment type but not seniority or industry)
+        try:
+            job_description_path = "//div[@class='description__text description__text--rich']"
+            job_description0 = job.find_element(By.XPATH, job_description_path).get_attribute('innerText')
+        except:
+            job_description0 = None
         job_description.append(job_description0)
 
-        seniority_path = "//li[1]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
-        seniority0 = job.find_element(By.XPATH, seniority_path).get_attribute('innerText')
+        try:
+            seniority_path = "//li[1]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
+            seniority0 = job.find_element(By.XPATH, seniority_path).get_attribute('innerText')
+        except:
+            seniority0 = None
         seniority.append(seniority0)
 
-        emp_type_path = "//li[2]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
-        emp_type0 = job.find_element(By.XPATH, emp_type_path).get_attribute('innerText')
+        try:
+            emp_type_path = "//li[2]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
+            emp_type0 = job.find_element(By.XPATH, emp_type_path).get_attribute('innerText')
+        except:
+            emp_type0 = None
         emp_type.append(emp_type0)
 
-        job_function_path = "//li[3]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
-        job_function_elements = job.find_elements(By.XPATH, job_function_path)
-        for element in job_function_elements:
-            job_function0.append(element.get_attribute('innerText'))
-            job_function1 = ', '.join(job_function0)
+        try:
+            job_function_path = "//li[3]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
+            job_function_elements = job.find_elements(By.XPATH, job_function_path)
+            for element in job_function_elements:
+                job_function0.append(element.get_attribute('innerText'))
+                job_function1 = ', '.join(job_function0)
+        except:
+            job_function1 = None
         job_function.append(job_function1)
 
-        industries_path = "//li[4]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
-        industries_elements = job.find_elements(By.XPATH, industries_path)
-        for element in industries_elements:
-            industries0.append(element.get_attribute('innerText'))
-            industries1 = ', '.join(industries0)
+        try:
+            industries_path = "//li[4]/span[@class='description__job-criteria-text description__job-criteria-text--criteria']"
+            industries_elements = job.find_elements(By.XPATH, industries_path)
+            for element in industries_elements:
+                industries0.append(element.get_attribute('innerText'))
+                industries1 = ', '.join(industries0)
+        except:
+            industries1 = None
         industries.append(industries1)
 
         # #/html/body/div[1]/div/section/div[2]/section/div/div[1]/div/h4/div[2]/figure/figcaption  //div[@class='base-serp-page']//section[@class='two-pane-serp-page__detail-view']
-        # applicants_path = "//figure[@class='num-applicants__figure topcard__flavor--metadata topcard__flavor--bullet']/figcaption" # [@class='num-applicants__caption']"
-        # applicants0 = job.find_element(By.XPATH, applicants_path).get_attribute('innerText')
+        # try:
+        #     applicants_path = "//figcaption[@class='num-applicants__caption']"
+        #     applicants0 = job.find_element(By.XPATH, applicants_path).get_attribute('innerText')
+        # except:
+        #     applicants0 = None
+        #     print('Applicant data error')
         # applicants.append(applicants0)
 
 
@@ -173,7 +192,7 @@ def jobs_to_dataframe(jobs):
     'Employment_Type': emp_type,
     'Function': job_function,
     'Industry': industries
-    #'Applicants': applicants
+    # 'Applicants': applicants
     })
 
 
