@@ -1,0 +1,292 @@
+1659710296931	geckodriver	INFO	Listening on 127.0.0.1:64358
+1659710299984	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64359" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileQhEIXo"
+1659710300192	Marionette	INFO	Marionette enabled
+1659710300195	Marionette	INFO	Listening on port 64368
+WebDriver BiDi listening on ws://localhost:64359
+Read port: 64368
+1659710300261	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileQhEIXo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64359/devtools/browser/c351317c-dcbd-424e-949a-362d1c34626f
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+1659710599900	geckodriver	INFO	Listening on 127.0.0.1:64489
+1659710602957	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64490" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileZRptiK"
+1659710603170	Marionette	INFO	Marionette enabled
+1659710603173	Marionette	INFO	Listening on port 64499
+WebDriver BiDi listening on ws://localhost:64490
+Read port: 64499
+1659710603242	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileZRptiK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64490/devtools/browser/93ff10cc-fbfc-4012-8aab-7a78d0b0551c
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://static-exp1.licdn.com/sc/h/1f0o8asarfspok2zpu5dl86by, line 1: Error: POST request for /jobs-guest/api/ingraphs/counter has failed with status code 429
+1659710615610	geckodriver	INFO	Listening on 127.0.0.1:64571
+1659710620851	geckodriver	INFO	Listening on 127.0.0.1:64577
+1659710623911	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64578" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofilehs0zJM"
+1659710624123	Marionette	INFO	Marionette enabled
+1659710624126	Marionette	INFO	Listening on port 64587
+WebDriver BiDi listening on ws://localhost:64578
+Read port: 64587
+1659710624194	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofilehs0zJM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64578/devtools/browser/4d8841aa-6050-4375-be6d-f7adbdbbdd6b
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: https://static-exp1.licdn.com/sc/h/7bkj7g2x5rbft9wlkrzykgrqf, line 2: Error: GET request for /jobs-guest/jobs/api/jobPosting/3198558727?refId=RllIJ6xhWPCTjXr8hwbsdQ%3D%3D&trackingId=64y0gCLB0GQYOx%2B4PM1XcA%3D%3D has failed with status code 429
+1659710691034	geckodriver	INFO	Listening on 127.0.0.1:64653
+1659710694085	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64654" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileRZhk7c"
+1659710694292	Marionette	INFO	Marionette enabled
+1659710694295	Marionette	INFO	Listening on port 64663
+WebDriver BiDi listening on ws://localhost:64654
+Read port: 64663
+1659710694363	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileRZhk7c\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64654/devtools/browser/cc754d4d-fc31-4727-ab61-6cc9735e6492
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: https://static-exp1.licdn.com/sc/h/7bkj7g2x5rbft9wlkrzykgrqf, line 2: Error: GET request for /jobs-guest/jobs/api/jobPosting/3207454149?refId=V8OKz%2BieAXjiMzqNzR%2FnFA%3D%3D&trackingId=GVmmmiHm144S1Ofcj07mpg%3D%3D has failed with status code 429
+1659710770295	geckodriver	INFO	Listening on 127.0.0.1:64730
+1659710773348	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64731" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileTJXd2X"
+1659710773556	Marionette	INFO	Marionette enabled
+1659710773559	Marionette	INFO	Listening on port 64740
+WebDriver BiDi listening on ws://localhost:64731
+Read port: 64740
+1659710773626	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileTJXd2X\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64731/devtools/browser/ff592c05-c644-49a3-aad2-e5dc336faaad
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: https://static-exp1.licdn.com/sc/h/7bkj7g2x5rbft9wlkrzykgrqf, line 2: Error: GET request for /jobs-guest/jobs/api/jobPosting/3198558727?refId=BeOTz8vzY0WJzV9ARqp1Bg%3D%3D&trackingId=02ONC51rWXEH6ZzI1QOJlA%3D%3D has failed with status code 429
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: https://static-exp1.licdn.com/sc/h/7bkj7g2x5rbft9wlkrzykgrqf, line 2: Error: GET request for /jobs-guest/jobs/api/jobPosting/3202947249?refId=BeOTz8vzY0WJzV9ARqp1Bg%3D%3D&trackingId=ChyBPv8CdujnAPwHjetEDg%3D%3D has failed with status code 429
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: https://static-exp1.licdn.com/sc/h/7bkj7g2x5rbft9wlkrzykgrqf, line 2: Error: GET request for /jobs-guest/jobs/api/jobPosting/3105356688?refId=BeOTz8vzY0WJzV9ARqp1Bg%3D%3D&trackingId=XFTVzQgFtBLzv1ZsyKo3XQ%3D%3D has failed with status code 429
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: https://static-exp1.licdn.com/sc/h/7bkj7g2x5rbft9wlkrzykgrqf, line 2: Error: GET request for /jobs-guest/jobs/api/jobPosting/3105355661?refId=BeOTz8vzY0WJzV9ARqp1Bg%3D%3D&trackingId=IOEDoQlrKgy9oTHDl5G2Ew%3D%3D has failed with status code 429
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: https://static-exp1.licdn.com/sc/h/7bkj7g2x5rbft9wlkrzykgrqf, line 2: Error: GET request for /jobs-guest/jobs/api/jobPosting/3168927218?refId=BeOTz8vzY0WJzV9ARqp1Bg%3D%3D&trackingId=JxLph4uJw%2BpX1IOGB%2BvR3A%3D%3D has failed with status code 429
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: https://static-exp1.licdn.com/sc/h/7bkj7g2x5rbft9wlkrzykgrqf, line 2: Error: GET request for /jobs-guest/jobs/api/jobPosting/3202944855?refId=BeOTz8vzY0WJzV9ARqp1Bg%3D%3D&trackingId=JdjvwewpenfUp0m5%2BjjdNA%3D%3D has failed with status code 429
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: https://static-exp1.licdn.com/sc/h/7bkj7g2x5rbft9wlkrzykgrqf, line 2: Error: GET request for /jobs-guest/jobs/api/jobPosting/3105354808?refId=BeOTz8vzY0WJzV9ARqp1Bg%3D%3D&trackingId=tg%2FA3WAk%2B254lG3wZiHHEQ%3D%3D has failed with status code 429
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+1659710881038	geckodriver	INFO	Listening on 127.0.0.1:64804
+1659710884091	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64805" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileOhw8pT"
+1659710884300	Marionette	INFO	Marionette enabled
+1659710884304	Marionette	INFO	Listening on port 64814
+WebDriver BiDi listening on ws://localhost:64805
+Read port: 64814
+1659710884372	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileOhw8pT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64805/devtools/browser/bd41b101-88a9-4589-9c11-71ffba591d7b
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+1659710997566	geckodriver	INFO	Listening on 127.0.0.1:64897
+1659711000618	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64898" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofilesrFbCn"
+1659711000828	Marionette	INFO	Marionette enabled
+1659711000831	Marionette	INFO	Listening on port 64907
+WebDriver BiDi listening on ws://localhost:64898
+Read port: 64907
+1659711000899	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofilesrFbCn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64898/devtools/browser/95e095d6-bbec-4e7f-8ff7-b27578850864
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://static-exp1.licdn.com/sc/h/e785q99h29qs2x2x9sey0p946, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1659711007971	geckodriver	INFO	Listening on 127.0.0.1:64952
+1659711011008	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64953" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileydsZST"
+1659711011220	Marionette	INFO	Marionette enabled
+1659711011223	Marionette	INFO	Listening on port 64962
+WebDriver BiDi listening on ws://localhost:64953
+Read port: 64962
+1659711011397	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileydsZST\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64953/devtools/browser/6574db4c-5479-4684-b655-2b1ebd90d217
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+1659711081505	geckodriver	INFO	Listening on 127.0.0.1:65035
+1659711084555	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65036" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileC4MixW"
+1659711084764	Marionette	INFO	Marionette enabled
+1659711084767	Marionette	INFO	Listening on port 65045
+WebDriver BiDi listening on ws://localhost:65036
+Read port: 65045
+1659711084836	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileC4MixW\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65036/devtools/browser/e8f59069-b761-44b5-ba0a-93d724624679
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+1659711137478	geckodriver	INFO	Listening on 127.0.0.1:65112
+1659711140517	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65113" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileAAIz1k"
+1659711140728	Marionette	INFO	Marionette enabled
+1659711140731	Marionette	INFO	Listening on port 65122
+WebDriver BiDi listening on ws://localhost:65113
+Read port: 65122
+1659711140799	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileAAIz1k\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65113/devtools/browser/a1c8d63b-f264-4a80-988d-88342190d396
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+1659711374584	geckodriver	INFO	Listening on 127.0.0.1:65192
+1659711377630	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65193" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofilemykvd3"
+1659711377838	Marionette	INFO	Marionette enabled
+1659711377842	Marionette	INFO	Listening on port 65202
+WebDriver BiDi listening on ws://localhost:65193
+Read port: 65202
+1659711377908	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofilemykvd3\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65193/devtools/browser/5fb41118-f848-49b5-9358-f7a8d75bae8c
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+1659711590542	geckodriver	INFO	Listening on 127.0.0.1:65309
+1659711593592	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "diable-infobars" "--disable-extensions" "--remote-debugging-port" "65310" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileGrQfcx"
+1659711593802	Marionette	INFO	Marionette enabled
+1659711593805	Marionette	INFO	Listening on port 65319
+WebDriver BiDi listening on ws://localhost:65310
+Read port: 65319
+1659711593875	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Someone\\AppData\\Local\\Temp\\rust_mozprofileGrQfcx\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65310/devtools/browser/a3eee0ec-d613-4690-a566-a3433cb155a1
