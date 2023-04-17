@@ -1,6 +1,4 @@
-## Tutorial for first part: https://maoviola.medium.com/a-complete-guide-to-web-scraping-linkedin-job-postings-ad290fcaa97f
-
-## This script will scrape new DA jobs from LI and append them to SQLite DB
+## The goal of this script is to scrape new Data Analyst jobs from LI and append them to SQLite DB
 
 ## Note: many new jobs are uploaded around 12pm EST it appears (old jobs disappeared)
 
